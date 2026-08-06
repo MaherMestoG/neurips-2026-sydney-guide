@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guide to attending NeurIPS 2026 in Sydney for PhD students, with all 54 Sydney workshops and their submission deadlines.">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="%230C6E6B"/><text x="16" y="23" font-family="Georgia,serif" font-size="19" font-weight="bold" text-anchor="middle" fill="%23F4F7F7">N</text></svg>'>
+<title>NeurIPS 2026 Sydney: PhD Survival Guide</title>
+<style>
+  :root{
+    --paper:#F4F7F7; --raised:#FFFFFF; --ink:#101A1F; --body:#233238; --muted:#5A6B71;
+    --rule:#D3DEDE; --rule-soft:#E4ECEC;
+    --accent:#0C6E6B; --accent-soft:#E2F0EF; --accent-ink:#08514F;
+    --urgent:#A8431B; --urgent-soft:#F8E7DE; --urgent-rule:#D98C64;
+    --ok:#2C6A4F; --ok-soft:#E3F0E9;
+    --shadow:0 1px 2px rgba(16,26,31,.05),0 8px 24px -16px rgba(16,26,31,.25);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0C1417; --raised:#131F23; --ink:#EAF2F1; --body:#C2D2D2; --muted:#8CA0A2;
+      --rule:#26383C; --rule-soft:#1C2A2E;
+      --accent:#4FC8C0; --accent-soft:#12312F; --accent-ink:#7FDAD3;
+      --urgent:#F2925F; --urgent-soft:#33200F; --urgent-rule:#8A4E27;
+      --ok:#6FBF95; --ok-soft:#132A20;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0C1417; --raised:#131F23; --ink:#EAF2F1; --body:#C2D2D2; --muted:#8CA0A2;
+    --rule:#26383C; --rule-soft:#1C2A2E;
+    --accent:#4FC8C0; --accent-soft:#12312F; --accent-ink:#7FDAD3;
+    --urgent:#F2925F; --urgent-soft:#33200F; --urgent-rule:#8A4E27;
+    --ok:#6FBF95; --ok-soft:#132A20;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+  }
+  :root[data-theme="light"]{
+    --paper:#F4F7F7; --raised:#FFFFFF; --ink:#101A1F; --body:#233238; --muted:#5A6B71;
+    --rule:#D3DEDE; --rule-soft:#E4ECEC;
+    --accent:#0C6E6B; --accent-soft:#E2F0EF; --accent-ink:#08514F;
+    --urgent:#A8431B; --urgent-soft:#F8E7DE; --urgent-rule:#D98C64;
+    --ok:#2C6A4F; --ok-soft:#E3F0E9;
+    --shadow:0 1px 2px rgba(16,26,31,.05),0 8px 24px -16px rgba(16,26,31,.25);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--body);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16.5px; line-height:1.62;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:1180px; margin:0 auto; padding:0 clamp(16px,4vw,40px)}
+  .prose{max-width:68ch}
+
+  h1,h2,h3{font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    color:var(--ink); text-wrap:balance; margin:0; font-weight:600}
+  h1{font-size:clamp(2rem,5vw,3.1rem); line-height:1.08; letter-spacing:-.015em}
+  h2{font-size:clamp(1.4rem,3vw,1.9rem); line-height:1.18; letter-spacing:-.01em}
+  h3{font-size:1.06rem; line-height:1.3}
+  p{margin:0}
+  a{color:var(--accent-ink); text-underline-offset:.16em; text-decoration-thickness:.06em}
+  a:hover{color:var(--accent)}
+  a:focus-visible,summary:focus-visible,.dl-btn:focus-visible{
+    outline:2.5px solid var(--accent); outline-offset:3px; border-radius:3px}
+  code,.mono{font-family:ui-monospace,"Cascadia Code","SF Mono",Consolas,"Liberation Mono",monospace;
+    font-size:.86em; font-variant-numeric:tabular-nums}
+
+  .eyebrow{font-family:ui-monospace,"Cascadia Code","SF Mono",Consolas,monospace;
+    font-size:.685rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted)}
+
+  /* ---- masthead ---- */
+  .masthead{border-bottom:1px solid var(--rule); background:var(--raised)}
+  .masthead .wrap{padding-top:clamp(40px,7vw,72px); padding-bottom:clamp(28px,4vw,40px)}
+  .kicker{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; margin-bottom:18px}
+  .kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block}
+  .lede{font-size:1.12rem; margin-top:18px; max-width:62ch; color:var(--body)}
+  .stamp{display:flex; flex-wrap:wrap; gap:8px 22px; margin-top:24px;
+    font-family:ui-monospace,"Cascadia Code","SF Mono",Consolas,monospace;
+    font-size:.76rem; color:var(--muted)}
+  .stamp b{color:var(--ink); font-weight:600}
+
+  .warn{
+    margin-top:26px; border:1px solid var(--urgent-rule); border-left-width:4px;
+    background:var(--urgent-soft); border-radius:0 6px 6px 0;
+    padding:13px 16px; font-size:.94rem; max-width:72ch; color:var(--body);
+  }
+  .warn b{color:var(--urgent)}
+
+  /* ---- section nav ---- */
+  nav.jump{position:sticky; top:0; z-index:20; background:var(--paper);
+    border-bottom:1px solid var(--rule); backdrop-filter:saturate(1.4) blur(6px)}
+  nav.jump ul{display:flex; gap:2px; list-style:none; margin:0; padding:0;
+    overflow-x:auto; scrollbar-width:thin}
+  nav.jump a{display:block; white-space:nowrap; padding:11px 13px; font-size:.8rem;
+    color:var(--muted); text-decoration:none; border-bottom:2px solid transparent}
+  nav.jump a:hover{color:var(--accent-ink); border-bottom-color:var(--rule)}
+
+  section{padding:clamp(38px,6vw,62px) 0; border-bottom:1px solid var(--rule-soft)}
+  .sec-head{display:flex; flex-direction:column; gap:9px; margin-bottom:26px}
+
+  /* ---- key facts ---- */
+  .facts{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(232px,1fr)); margin-bottom:22px}
+  .fact{background:var(--raised); border:1px solid var(--rule); border-radius:7px; padding:16px 17px;
+    display:flex; flex-direction:column; gap:5px; box-shadow:var(--shadow)}
+  .fact .where{font-family:Georgia,serif; font-size:1.16rem; color:var(--ink); font-weight:600}
+  .fact .when{font-family:ui-monospace,"Cascadia Code",Consolas,monospace; font-size:.83rem;
+    color:var(--accent-ink); font-variant-numeric:tabular-nums}
+  .fact .note{font-size:.87rem; color:var(--muted)}
+  .fact.main{border-color:var(--accent); border-width:1.5px}
+
+  /* ---- ranked options ---- */
+  ol.ranked{list-style:none; counter-reset:r; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+  ol.ranked>li{counter-increment:r; display:grid; grid-template-columns:auto 1fr; gap:0 18px;
+    padding:19px 0; border-top:1px solid var(--rule-soft)}
+  ol.ranked>li:first-child{border-top:0}
+  ol.ranked>li::before{content:counter(r); font-family:Georgia,serif; font-size:1.5rem;
+    color:var(--accent); line-height:1; padding-top:2px; font-variant-numeric:tabular-nums}
+  .opt-body{display:flex; flex-direction:column; gap:7px; min-width:0}
+  .opt-body h3{display:flex; align-items:baseline; gap:9px; flex-wrap:wrap}
+  .opt-body p{font-size:.95rem; max-width:66ch}
+  .opt-meta{font-size:.87rem; color:var(--muted); max-width:66ch}
+
+  .tag{display:inline-block; font-family:ui-monospace,Consolas,monospace; font-size:.63rem;
+    letter-spacing:.11em; text-transform:uppercase; padding:3px 7px; border-radius:3px;
+    border:1px solid currentColor; vertical-align:middle; font-weight:600}
+  .tag-ok{color:var(--ok); background:var(--ok-soft)}
+  .tag-exp{color:var(--urgent); background:var(--urgent-soft)}
+  .tag-unv{color:var(--muted); background:transparent}
+
+  .callout{border:1px solid var(--rule); border-left:4px solid var(--accent);
+    background:var(--raised); border-radius:0 7px 7px 0; padding:16px 18px; margin:22px 0;
+    display:flex; flex-direction:column; gap:9px; box-shadow:var(--shadow)}
+  .callout.hot{border-left-color:var(--urgent)}
+  .callout h3{font-size:1rem}
+  .callout ul{margin:0; padding-left:19px; font-size:.92rem; display:flex; flex-direction:column; gap:5px}
+  .callout .when{font-family:ui-monospace,Consolas,monospace; color:var(--urgent);
+    font-weight:600; font-variant-numeric:tabular-nums}
+
+  /* ---- tables ---- */
+  .tscroll{overflow-x:auto; -webkit-overflow-scrolling:touch;
+    border:1px solid var(--rule); border-radius:8px; background:var(--raised); box-shadow:var(--shadow)}
+  table{border-collapse:collapse; width:100%; min-width:940px; font-size:.9rem}
+  thead th{position:sticky; top:0; background:var(--raised); text-align:left; vertical-align:bottom;
+    font-family:ui-monospace,Consolas,monospace; font-size:.67rem; letter-spacing:.13em;
+    text-transform:uppercase; color:var(--muted); font-weight:600;
+    padding:12px 14px; border-bottom:1.5px solid var(--rule); z-index:1}
+  tbody th,tbody td{padding:13px 14px; border-top:1px solid var(--rule-soft); vertical-align:top; text-align:left}
+  tbody th{font-weight:600; font-size:.93rem; min-width:250px; max-width:340px}
+  tbody th a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule)}
+  tbody th a:hover{color:var(--accent-ink); border-bottom-color:var(--accent)}
+  tbody td:nth-child(2){min-width:270px; max-width:400px; color:var(--body)}
+  td.dl{min-width:190px; white-space:normal}
+  td.fmt{min-width:230px; max-width:330px; font-size:.85rem; color:var(--muted)}
+  tbody tr:hover{background:var(--accent-soft)}
+  tbody tr.u th{box-shadow:inset 3px 0 0 var(--urgent)}
+  tbody tr.np th{box-shadow:inset 3px 0 0 var(--muted)}
+
+  .pill{display:inline-block; font-family:ui-monospace,Consolas,monospace; font-size:.76rem;
+    padding:3px 8px; border-radius:4px; font-variant-numeric:tabular-nums; line-height:1.45}
+  .pill-u{background:var(--urgent-soft); color:var(--urgent); border:1px solid var(--urgent-rule); font-weight:600}
+  .pill-n{background:transparent; color:var(--muted); border:1px dashed var(--rule)}
+
+  .legend{display:flex; flex-wrap:wrap; gap:8px 20px; margin:14px 0 0; font-size:.84rem; color:var(--muted)}
+  .legend span{display:flex; align-items:center; gap:7px}
+  .swatch{width:11px;height:11px;border-radius:2px;display:inline-block}
+
+  /* ---- satellite lists ---- */
+  .sat-grid{display:grid; gap:26px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .sat{background:var(--raised); border:1px solid var(--rule); border-radius:8px; padding:19px 20px;
+    box-shadow:var(--shadow)}
+  .sat h3{margin-bottom:3px}
+  .sat .sub{font-size:.85rem; color:var(--muted); margin-bottom:14px}
+  .sat ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0}
+  .sat li{padding:7px 0; border-top:1px solid var(--rule-soft); font-size:.89rem;
+    display:flex; justify-content:space-between; gap:12px; align-items:baseline}
+  .sat li:first-child{border-top:0}
+  .sat li a{color:var(--ink); text-decoration:none; border-bottom:1px solid transparent}
+  .sat li a:hover{color:var(--accent-ink); border-bottom-color:var(--accent)}
+  .sat li code{color:var(--muted); white-space:nowrap; font-size:.74rem}
+
+  /* ---- timeline ---- */
+  .tl{display:flex; flex-direction:column; gap:0; margin:0; padding:0; list-style:none}
+  .tl li{display:grid; grid-template-columns:minmax(112px,150px) 1fr; gap:0 20px;
+    padding:14px 0; border-top:1px solid var(--rule-soft)}
+  .tl li:first-child{border-top:0}
+  .tl .date{font-family:ui-monospace,Consolas,monospace; font-size:.82rem; color:var(--ink);
+    font-variant-numeric:tabular-nums; font-weight:600; padding-top:2px}
+  .tl .what{display:flex; flex-direction:column; gap:5px; min-width:0}
+  .tl .what p{font-size:.94rem}
+  .tl .what .src{font-size:.82rem; color:var(--muted)}
+
+  /* ---- download ---- */
+  .dl-card{background:var(--raised); border:1px solid var(--rule); border-radius:8px;
+    padding:22px 24px; display:flex; flex-direction:column; gap:15px; box-shadow:var(--shadow); max-width:74ch}
+  .dl-btn{align-self:flex-start; display:inline-flex; align-items:center; gap:10px;
+    background:var(--accent); color:var(--paper); text-decoration:none; font-weight:600;
+    padding:11px 20px; border-radius:6px; font-size:.94rem; border:1px solid var(--accent)}
+  .dl-btn:hover{background:var(--accent-ink); border-color:var(--accent-ink)}
+  .dl-list{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:7px; font-size:.9rem}
+  .dl-list li{display:grid; grid-template-columns:88px 1fr; gap:14px}
+  .dl-list .d{font-family:ui-monospace,Consolas,monospace; font-size:.8rem; color:var(--accent-ink);
+    font-variant-numeric:tabular-nums}
+
+  footer{padding:clamp(34px,5vw,52px) 0 clamp(48px,7vw,72px); border-bottom:0}
+  footer .prose{display:flex; flex-direction:column; gap:13px; font-size:.9rem; color:var(--muted)}
+  footer b{color:var(--ink)}
+
+  @media (max-width:620px){
+    .tl li{grid-template-columns:1fr; gap:5px}
+    ol.ranked>li{grid-template-columns:1fr; gap:8px}
+    ol.ranked>li::before{font-size:1.15rem}
+    .dl-list li{grid-template-columns:1fr; gap:1px}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="kicker">
+      <span class="eyebrow">Unofficial peer guide</span><span class="dot"></span>
+      <span class="eyebrow">UNSW PhD students</span>
+    </div>
+    <h1>NeurIPS 2026 is in Sydney. Here is how to go, and what to submit to.</h1>
+    <p class="lede">The fortieth NeurIPS runs at ICC Sydney from 6 to 12 December 2026. If you
+      are based in Sydney, your travel and accommodation costs are zero and registration is the
+      only real barrier, which makes this the cheapest NeurIPS you will ever attend. This page
+      collects the routes to attending free, and every Sydney workshop with its actual deadline.</p>
+    <div class="stamp">
+      <span>Workshop data checked <b>6 August 2026</b></span>
+      <span>Attendance and volunteer facts checked <b>22 July 2026</b></span>
+      <span>Written for peers, not affiliated with NeurIPS</span>
+    </div>
+    <p class="warn"><b>Freshness warning.</b> Every volunteer and financial assistance date on this
+      page is an <em>expected</em> value carried over from the 2025 program. The 2026 pages were not
+      live when this was checked, so treat those dates as a planning guide and confirm them once
+      NeurIPS publishes the 2026 versions.</p>
+  </div>
+</header>
+
+<nav class="jump" aria-label="Section navigation">
+  <div class="wrap">
+    <ul>
+      <li><a href="#facts">Key facts</a></li>
+      <li><a href="#free">Attending free</a></li>
+      <li><a href="#sydney">Sydney workshops</a></li>
+      <li><a href="#satellites">Atlanta and Paris</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#calendar">Calendar reminders</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="facts">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Where and when</span>
+      <h2>Three cities, one conference</h2>
+    </div>
+    <div class="facts">
+      <div class="fact main">
+        <span class="where">Sydney</span>
+        <span class="when">6 to 12 Dec 2026</span>
+        <span class="note">Main venue, ICC Sydney. Workshops run 11 to 12 December.</span>
+      </div>
+      <div class="fact">
+        <span class="where">Atlanta</span>
+        <span class="when">9 to 13 Dec 2026</span>
+        <span class="note">Satellite. Workshops 12 to 13 December. Requires travel.</span>
+      </div>
+      <div class="fact">
+        <span class="where">Paris</span>
+        <span class="when">9 to 13 Dec 2026</span>
+        <span class="note">Satellite. Workshops 12 to 13 December. Requires travel.</span>
+      </div>
+    </div>
+    <p class="warn prose"><b>Check the city before you get excited.</b> The 109 accepted workshops
+      are split across all three sites, and a workshop's own website often does not make its city
+      obvious. Only the 54 below are in Sydney. The other 55 need a flight.</p>
+    <div class="prose" style="margin-top:22px; display:flex; flex-direction:column; gap:12px">
+      <p>The conference programme is confirmed: Expo talks on Sunday 6 December, tutorials on
+        Monday 7 December, main sessions Tuesday 8 to Thursday 10 December, and workshops on
+        Friday 11 and Saturday 12 December. A virtual pass covers the whole week.</p>
+      <p>Registration pricing for 2026 was not published as of 22 July 2026. The page said
+        pricing is not yet available. A widely quoted student rate of about USD 375 comes from
+        2023 and is indicative only, so do not budget on it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="free">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Cost</span>
+      <h2>How to attend cheaply or free as a Sydney local</h2>
+      <p class="prose" style="color:var(--muted); font-size:.95rem">Ranked for someone who lives
+        here. Being local changes the maths: hotel support is worth nothing to you, so routes that
+        bundle accommodation rank below routes that simply cover registration.</p>
+    </div>
+
+    <ol class="ranked">
+      <li>
+        <div class="opt-body">
+          <h3>Student volunteer <span class="tag tag-exp">Dates expected</span></h3>
+          <p>The strongest route, because it does not depend on having an accepted paper or on
+            anyone's budget. You work two shifts of roughly four hours each at the venue, and your
+            registration is refunded once the shifts are done.</p>
+          <p class="opt-meta"><b>The catch is cash flow, not eligibility.</b> Registration is paid
+            upfront and refunded afterwards, so you need the money available in early December.
+            Volunteering is offered at the main venue only, which for 2026 means Sydney. Based on
+            2025, applications open around 1 September and close around 1 October AoE, with
+            decisions by about 10 October.</p>
+        </div>
+      </li>
+      <li>
+        <div class="opt-body">
+          <h3>Financial assistance <span class="tag tag-exp">Terms expected</span></h3>
+          <p>A separate NeurIPS program awarding complimentary registration and/or a prepaid hotel
+            stay of up to seven nights. In 2025 it explicitly prioritised student and junior
+            postdoc conference authors.</p>
+          <p class="opt-meta">For a local, the hotel half is worthless, so the realistic benefit is
+            the same free registration the volunteer route gives you. It ranks second because its
+            priority ordering only favours you if you have an accepted paper. In 2025 it opened
+            1 September and closed 2 October AoE.</p>
+        </div>
+      </li>
+      <li>
+        <div class="opt-body">
+          <h3>Apply for both, but you can only win one</h3>
+          <p>The 2025 terms stated that you may apply for both the grant and the volunteer program,
+            but you will not be selected for both. Author notifications land on
+            <b>24 September 2026</b>, a confirmed date, which falls before the expected 1 October
+            volunteer deadline. You will know your author status in time to choose.</p>
+        </div>
+      </li>
+      <li>
+        <div class="opt-body">
+          <h3>Supervisor or school funds</h3>
+          <p>A direct request for registration only, with no travel or accommodation attached,
+            which is a much smaller ask than the usual conference request.</p>
+          <p class="opt-meta">Worth knowing: UNSW schemes such as PRSS and DRTG are oriented toward
+            travel and toward presenting your own work, so a local no-travel registration may fit
+            them awkwardly. A supervisor's grant or discretionary school funds are often the more
+            natural fit. Have the conversation early rather than in October.</p>
+        </div>
+      </li>
+      <li>
+        <div class="opt-body">
+          <h3>Affinity group support</h3>
+          <p>Groups including Women in Machine Learning, Queer in AI and Black in AI have
+            historically run their own registration support, funded by their sponsors and applied
+            for separately from the main NeurIPS programs.</p>
+          <p class="opt-meta">Eligibility depends on group membership and the schemes are smaller
+            and announced later, so treat this as a parallel long shot rather than a plan. Several
+            of these groups also run their own workshops, listed in the Sydney table below.</p>
+        </div>
+      </li>
+      <li>
+        <div class="opt-body">
+          <h3>Top reviewer awards</h3>
+          <p>NeurIPS has historically given free registration to its highest rated reviewers. It
+            ranks last because you cannot apply for it, the 2026 reviewing round is already well
+            advanced, and any award arrives too late to plan around. If it lands, it simply
+            displaces whichever route above it worked.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="sydney">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">54 workshops, Sydney</span>
+      <h2>Sydney workshops and their real deadlines</h2>
+      <p class="prose" style="color:var(--muted); font-size:.95rem">Sorted by deadline, soonest
+        first. Sydney workshops run on 11 and 12 December 2026 at ICC Sydney. Most sites say
+        "11 or 12 December, exact day to be confirmed", because NeurIPS has not published the
+        day by day assignment yet.</p>
+    </div>
+
+    <div class="callout hot">
+      <h3>Closing before 29 August, in deadline order</h3>
+      <p style="font-size:.93rem">Ten Sydney workshops have something due before 29 August. Eight
+        close entirely, and two more, ASCI and AutoMLR, take an early abstract before a 29 August
+        final paper. The pair on <span class="when">26 August</span> are the easiest to miss,
+        because they sit just three days ahead of the date most people have in their heads.</p>
+      <ul>
+        <li><span class="when">10 Aug</span> Africa in AI, MusIML and Queer in AI, early visa
+          support rounds. Each has a later main deadline, but this round is the one that helps with
+          travel paperwork.</li>
+        <li><span class="when">20 Aug</span> LatinX in AI, and the ASCI abstract registration.</li>
+        <li><span class="when">22 Aug</span> NeurReps, and the AutoMLR abstract.</li>
+        <li><span class="when">26 Aug</span> <b>8th Robot Learning Workshop</b> and
+          <b>Physical Understanding for Decision-Making</b>. Note the second closes at 08:00 UTC,
+          not at end of day AoE, so it is effectively an evening deadline in Sydney.</li>
+        <li><span class="when">28 Aug</span> Interpretability as a Science.</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <h3>Why so many land on 29 August</h3>
+      <p style="font-size:.93rem">29 August 2026 AoE is NeurIPS's own <em>suggested</em> submission
+        date for workshop contributions, published in the Call for Workshops. It is a suggestion,
+        not a rule. Of the 54 workshops here, 34 adopted it exactly, 8 close earlier, 9 close
+        later, and 3 have published nothing yet. Some sites list "30 August 12:00 UTC", which is
+        the same instant as 29 August 23:59 AoE, not a different day.</p>
+    </div>
+
+    <div class="tscroll">
+      <table>
+        <caption class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Sydney workshops with topic, deadline and submission format</caption>
+        <thead>
+          <tr><th scope="col">Workshop</th><th scope="col">Topic</th><th scope="col">Deadline</th><th scope="col">Format</th></tr>
+        </thead>
+        <tbody>
+          <tr class="u"><th scope="row"><a href="https://africainai.mailab.io/" target="_blank" rel="noopener">Africa in AI Affinity Workshop</a></th><td>Elevating African perspectives in AI and advancing trustworthy, resource-efficient AI for sustainable development.</td><td class="dl"><span class="pill pill-u">10 Aug 2026 for the visa support track. Full paper 10 Sep 2026, 11:59pm AoE</span></td><td class="fmt">Long papers 8 pages plus up to 2 pages of references, double-blind. Organisers are coordinating with Springer toward an LNCS volume, so archival status is not settled as of 6 August 2026.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://www.queerinai.com/neurips-2026" target="_blank" rel="noopener">Queer in AI and {Dis}Ability in AI Workshop</a></th><td>A gathering space and workshop for queer and disabled researchers working at the intersection of AI, queerness and disability. Runs across Sydney, Paris and Atlanta.</td><td class="dl"><span class="pill pill-u">10 Aug 2026 AoE visa-friendly round. Final 3 Sep 2026 AoE</span></td><td class="fmt">Non-archival. Research papers, extended abstracts, position pieces, surveys or media pieces. Page limits not published as of 6 August 2026.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://www.musiml.org/" target="_blank" rel="noopener">The 7th Muslims in ML (MusIML) Workshop</a></th><td>Machine learning, fairness and the global Muslim community, promoting research by and for Muslim researchers.</td><td class="dl"><span class="pill pill-u">10 Aug 2026 visa-friendly round. Final 10 Sep 2026 (no timezone stated)</span></td><td class="fmt">Non-archival by default, with a later opt-in for selected papers. Five tracks, short 4 pages or long 8 pages depending on track, demos 2 to 4 pages, competition proposals 2 pages.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://asci.artificialintelligencepathology.org/" target="_blank" rel="noopener">AI at Scale for Clinical Impact: Cancer Pathology Foundation Models (ASCI)</a></th><td>Hospital scale multimodal cancer pathology models moving from benchmarks to validated clinical use.</td><td class="dl"><span class="pill pill-u">Abstract 20 Aug, full paper 29 Aug 2026, both 12:00am UTC</span></td><td class="fmt">Single-blind. Nine content pages, references and technical appendices excluded. Archival status not published as of 6 August 2026.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://www.latinxinai.org/neurips-2026" target="_blank" rel="noopener">LatinX in AI (LXAI) Research Workshop</a></th><td>LatinX researchers presenting papers on any subject accepted by NeurIPS, with mentoring and a panel.</td><td class="dl"><span class="pill pill-u">20 Aug 2026, 23:59:59 AoE</span></td><td class="fmt">Authors choose archival or non-archival per paper. Archival papers go to the Journal of LatinX in AI Research and cannot then be submitted elsewhere. Extended abstract up to 4 pages, full paper up to 8 pages, excluding references.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://neurreps.org/" target="_blank" rel="noopener">Symmetry and Geometry in Neural Representations (NeurReps)</a></th><td>Geometric and topological principles shared by brains and machines.</td><td class="dl"><span class="pill pill-u">22 Aug 2026 AoE</span></td><td class="fmt">Three tracks with different archival status. Proceedings: archival, PMLR volume, 9 pages. Extended Abstract: non-archival, 4 pages. Findings: no page limit, single-blind, archival status not published as of 6 August 2026.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://automlr.com" target="_blank" rel="noopener">Workshop for Autonomous Machine Learning Research (AutoMLR)</a></th><td>Machine learning research carried out end to end by autonomous agents, with discussant led public review.</td><td class="dl"><span class="pill pill-u">Abstract 22 Aug, final 29 Aug 2026 (timezones to be posted)</span></td><td class="fmt">Non-archival. Three labelled parts of 4, 4 and 1 pages, 9 pages total excluding references, not reallocatable.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://www.robot-learning.ml/2026/" target="_blank" rel="noopener">8th Robot Learning Workshop: Is Physical AI Going Zero-Shot? (WRL)</a></th><td>Whether foundation models and reasoning agents let robots generalise zero-shot to unseen real world tasks.</td><td class="dl"><span class="pill pill-u">26 Aug 2026, 11:59pm AoE</span></td><td class="fmt">Non-archival. Up to 6 pages, NeurIPS format.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://sites.google.com/view/neurips-2026-workshop-pudm" target="_blank" rel="noopener">Physical Understanding for Decision-Making (PhysUnderstand)</a></th><td>Whether AI systems understand objects, forces and causality well enough to make reliable decisions.</td><td class="dl"><span class="pill pill-u">26 Aug 2026, 08:00 UTC</span></td><td class="fmt">Non-archival. Tiny up to 4 pages, full up to 9 pages, plus unlimited references and appendix.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://interpscience.github.io/" target="_blank" rel="noopener">Interpretability as a Science (InterpScience)</a></th><td>What it would take to ground interpretability of large language models as a rigorous empirical science.</td><td class="dl"><span class="pill pill-u">28 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Short up to 5 pages, long up to 9 pages.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://sites.google.com/view/aaba4et" target="_blank" rel="noopener">2nd Workshop on Agentic AI Benchmarks and Applications for Enterprise Tasks (AABA4ET)</a></th><td>Benchmarking and deploying agentic AI for complex enterprise operations.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Up to 4 pages including figures and tables, unlimited references and appendices.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://agentic-fmos.github.io/" target="_blank" rel="noopener">AgenticOS: Co-designing Systems and ML Foundations of an OS Layer for Agentic AI</a></th><td>Co-designing the abstractions and systems layer that agentic AI runs on.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Extended abstract up to 2 pages, regular paper up to 6 pages of technical content.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://sites.google.com/view/ai4mat/home" target="_blank" rel="noopener">AI for Accelerated Materials Design (AI4Mat)</a></th><td>AI researchers and materials scientists working together on materials discovery.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AOE</span></td><td class="fmt">Non-archival. Papers track short 4 pages or full 9 pages, findings track 5 pages, plus a themed track. Optional Wiley journal opt-in.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://ai4dd-neurips2026.github.io/" target="_blank" rel="noopener">AI for Drug Discovery: Bridging the Translation Gap (AI4DD)</a></th><td>Closing the gap between AI benchmark performance and real world drug discovery impact.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 11:59pm AoE</span></td><td class="fmt">Non-archival. Full up to 5 pages, short up to 2 pages, excluding references and appendix.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://eethanshi.github.io/stochastic-dynamics-2026/" target="_blank" rel="noopener">AI for Stochastic Dynamics: From Theoretical Foundations to Scientific Applications (STODY)</a></th><td>Machine learning for systems driven by randomness, covering SDEs, diffusion models and neural operators.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 23:59 AoE</span></td><td class="fmt">Regular up to 8 pages, short up to 4 pages, excluding references and appendices. Archival status not published as of 6 August 2026.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://ai4powergrids.github.io" target="_blank" rel="noopener">AI Foundations for Power Grids: From Models to Deployment at Scale (AI4PowerGrids)</a></th><td>Evaluating learning-based methods for power grid operation under realistic conditions.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Up to 4 pages of main content, unlimited references. Four tracks including negative results.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://bento-neurips.github.io/" target="_blank" rel="noopener">Beyond Next-Token Prediction: Diffusion and Flow Models for Next-Generation Decoding (BeNTo)</a></th><td>Discrete diffusion and flow models as an alternative to autoregressive generation.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 23:59 AoE</span></td><td class="fmt">4 or 8 pages excluding references and appendices. Two tracks, theory and applications. Archival status not published as of 6 August 2026.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://bialign-workshop.github.io/" target="_blank" rel="noopener">Bidirectional Human-AI Alignment: Dynamic Alignment in Human-AI Coupled Systems (BiAlign)</a></th><td>Alignment treated as a two way process in which humans and AI continuously adapt to and reshape each other over time.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 11:59pm AoE</span></td><td class="fmt">Non-archival. 2 page tiny, 4 page short or 9 page long, excluding references.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://collaborative-open-decentralized-fomo.github.io/" target="_blank" rel="noopener">Collaborative, Open, and Decentralized Training of Foundation Models (CODEC-FM)</a></th><td>Training large models across distributed, heterogeneous and decentralised compute.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 23:59 AoE</span></td><td class="fmt">Non-archival, double-blind. Long up to 6 pages, tiny up to 2 pages, excluding references and appendix.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://neurips26-cl4fmagents.github.io" target="_blank" rel="noopener">Continual Learning in the Era of Foundation Models and Embodied Agents (CL4FMAgents)</a></th><td>Continual and lifelong learning for foundation models and embodied agents in changing environments.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Regular up to 8 pages, short up to 4 pages, excluding references.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://continual-world-models-workshop.github.io/" target="_blank" rel="noopener">Continual World Models (CWM)</a></th><td>World models that keep learning and revising themselves after deployment rather than staying frozen.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival, 4 to 8 pages.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://7amin.github.io/diffulm-neurips2026/" target="_blank" rel="noopener">Diffusion Language Models: Foundations, Efficiency, and Reasoning (DiffuLM)</a></th><td>The first NeurIPS workshop on diffusion language models, covering foundations, efficiency and reasoning.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival, double-blind. Extended abstracts up to 4 pages, short papers up to 8 pages.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://fmts-workshop.github.io/" target="_blank" rel="noopener">Foundation Models for Temporal Systems (FMTS)</a></th><td>Foundation models that forecast, simulate and support decisions in systems that evolve over time.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 11:59pm AoE</span></td><td class="fmt">Non-archival, single track, up to 4 pages excluding references and appendices.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://ptaworkshop.github.io/" target="_blank" rel="noopener">From Pretrained Representations to Acting Agents (PTA)</a></th><td>Turning pretrained representations from video, interaction and multimodal data into reliable behaviour for sequential decision making agents.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Full paper up to 9 pages, short up to 4 pages, NeurIPS format.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://icbinb-bio.github.io/" target="_blank" rel="noopener">I Can&#x27;t Believe It&#x27;s Not Better: Failure Modes of AI in Biology (ICBINB-BIO)</a></th><td>Why AI models for biology fail outside benchmarks, and what robustness is needed.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 11:59pm AoE (tentative)</span></td><td class="fmt">Non-archival. Full up to 8 pages excluding references and appendices, tiny up to 4 pages of main text.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://iab-agents.github.io/" target="_blank" rel="noopener">Interpreting Agent Behavior (IAB)</a></th><td>How to interpret what AI agents do over long runs, what humans do in response, and how the two interact.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, midnight AoE. Second route for NeurIPS-reviewed papers closes 1 Oct 2026</span></td><td class="fmt">Non-archival. Long up to 9 pages plus references, short up to 4 pages plus references. Separate Glee competition track.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://lp4fm.github.io/" target="_blank" rel="noopener">Linguistic Principles for Foundation Models (LP4FM)</a></th><td>The linguistic and symbolic medium through which foundation models perceive, reason and act.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 (no timezone stated for this row)</span></td><td class="fmt">Non-archival. Full 9 pages, short 4 pages, demo 4 pages, position 9 pages, references and appendices excluded.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://mlforsystems.org" target="_blank" rel="noopener">Machine Learning for Systems (MLForSys)</a></th><td>Applying machine learning and agentic workflows to computer systems design and operation.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, midnight AoE</span></td><td class="fmt">No formal proceedings. Extended abstracts up to 4 pages, strict, excluding references and appendices.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://meta-agents-workshop.github.io/" target="_blank" rel="noopener">Managing Agents that Manage Agents (Meta-Agents)</a></th><td>Higher order agents that build, optimise and supervise other agents, and how to oversee them.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Full up to 9 pages, short up to 4 pages, plus demo and position tracks.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://odi2026.github.io/" target="_blank" rel="noopener">On-Device Intelligence: Foundation Models under Real-World Constraints (ODI)</a></th><td>Running foundation models on device under latency, privacy and connectivity constraints.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival, double-blind. Short papers 5 pages excluding references.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://rtcaneurips26.github.io/" target="_blank" rel="noopener">Real-Time Conversational Agents (RTCA)</a></th><td>Agents that stream speech, video and language in real time, covering turn taking, interruptions and live evaluation.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Full up to 8 pages, short up to 4 pages, demo up to 2 pages.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://translatingmlresearch.github.io/RCMLR/" target="_blank" rel="noopener">Responsible Communication of Machine Learning Research in Biomedicine (RCMLR)</a></th><td>The gap between what ML can deliver in biomedicine and how its capabilities are communicated.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AOE</span></td><td class="fmt">Non-archival. Full papers 6 to 8 pages, short papers 2 to 3 pages, excluding references and appendices. Five topic tracks.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://robowm-ws.github.io/" target="_blank" rel="noopener">Robot Learning with World Models: Capabilities, Frontiers, and Challenges</a></th><td>Using predictive models of environment dynamics to advance robot learning, reasoning and control.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Full up to 8 pages, short 2 to 4 pages, NeurIPS or ICLR format. Demo proposals 1 page.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://www.climatechange.ai/events/neurips2026" target="_blank" rel="noopener">Tackling Climate Change with Machine Learning (TCCML)</a></th><td>Machine learning for climate mitigation, adaptation and climate science, themed on community led AI.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 23:59 AoE for papers and abstracts. Tutorials round II 15 Oct 2026</span></td><td class="fmt">Non-archival, no proceedings. Papers 4 pages, proposals 3 pages, tutorials as executable notebooks. References excluded.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://www.simbiochem.com" target="_blank" rel="noopener">The 2nd SIMBIOCHEM Workshop: ML for Simulations in Biology and Chemistry (Simbiochem)</a></th><td>Fusing molecular simulation, generative models and agentic AI for biological and chemical discovery.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 11:59pm UTC</span></td><td class="fmt">Non-archival, double-blind. Short papers 5 to 8 pages plus abstracts, excluding references and appendices.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://agentwild-workshop.github.io/neurips2026/" target="_blank" rel="noopener">Third Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD)</a></th><td>Safety, security and trustworthiness of AI agents deployed in real world environments.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE (tentative)</span></td><td class="fmt">Non-archival, single track, up to 9 pages, NeurIPS 2026 template.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://pretrain2posttrain.github.io" target="_blank" rel="noopener">Transitioning from Pre-Training to Post-Training (Pre-to-Post)</a></th><td>What a base model must have for post-training to succeed, and how to predict when post-training fails.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 11:59pm AoE</span></td><td class="fmt">Non-archival. Short 4 to 5 pages, long at the main conference page limit.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://tai-eval.github.io" target="_blank" rel="noopener">Trust-AI-Eval: Can We Trust AI Evaluation? (TAE)</a></th><td>Treats AI evaluation itself as the research object, asking when benchmark results are robust enough to act on.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Full papers up to 8 pages excluding references and appendices.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://ai4sciencecommunity.github.io/neurips26.html" target="_blank" rel="noopener">Verification in the Age of AI Scientists (AI4Science)</a></th><td>How to trust and act on AI generated scientific results when verifiers are imperfect or absent.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE (marked tentative)</span></td><td class="fmt">Non-archival. 4 to 8 pages, unlimited references and appendices. Three tracks: research, position, verifier systems.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://verify-agents-workshop.github.io/" target="_blank" rel="noopener">Who Verifies the Agents? Toward Reliable Agent Development (Verify-Agents)</a></th><td>Verification of AI agents as a research problem, covering robust verifiers and richer verification signals.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 23:59 AoE</span></td><td class="fmt">Non-archival. Papers 4 to 9 pages excluding references and appendices, demos up to 4 pages.</td></tr>
+          <tr class="u"><th scope="row"><a href="http://www.worldmodels-physicalai.com/" target="_blank" rel="noopener">World Models in Physical AI (WM_PAI)</a></th><td>Learned models that predict how the physical world evolves, so robots and embodied agents can simulate, plan and act.</td><td class="dl"><span class="pill pill-u">29 Aug 2026 AoE</span></td><td class="fmt">Non-archival. Up to 8 pages excluding references.</td></tr>
+          <tr class="u"><th scope="row"><a href="https://xai4science.github.io/" target="_blank" rel="noopener">XAI4Science: Knowledge Discovery and Trust through Interpretable Foundation Models</a></th><td>Explainable AI for weather and climate foundation models, checking they use physically meaningful patterns.</td><td class="dl"><span class="pill pill-u">29 Aug 2026, 23:59 AoE</span></td><td class="fmt">Non-archival, no proceedings. Regular track up to 8 pages, tiny track up to 5 pages, excluding references and appendices.</td></tr>
+          <tr><th scope="row"><a href="https://vlm4rwd.github.io" target="_blank" rel="noopener">Grounded and Faithful Vision-Language Models for Real-World Deployment (VLM4RWD)</a></th><td>Vision-language and vision-language-action models that stay grounded and reliable when deployed.</td><td class="dl">30 Aug 2026</td><td class="fmt">Non-archival. Up to 8 pages excluding references and appendices.</td></tr>
+          <tr><th scope="row"><a href="https://attrib-workshop.cc/" target="_blank" rel="noopener">3rd Workshop on Attributing Model Behavior at Scale (ATTRIB)</a></th><td>Tracing model outputs back to the data that produced them, and making those attributions useful.</td><td class="dl">1 Sep 2026 AoE</td><td class="fmt">Non-archival. Main track 3 to 6 pages, idea track 2 to 4 pages.</td></tr>
+          <tr><th scope="row"><a href="https://opt-ml.org/" target="_blank" rel="noopener">18th International OPT Workshop on Optimization for Machine Learning (OPT)</a></th><td>Optimisation research for machine learning, themed on whether new frontier optimisers can beat Adam.</td><td class="dl">4 Sep 2026 AoE</td><td class="fmt">No archival proceedings. Soft limit 5 pages excluding references and appendices, camera-ready 6 page hard limit.</td></tr>
+          <tr><th scope="row"><a href="https://brainbodyfm-workshop.github.io" target="_blank" rel="noopener">Foundation Models for the Brain and Body (BrainBodyFM)</a></th><td>Pretrained models for neural and physiological signals such as EEG, EMG, MEG and ECG.</td><td class="dl">5 Sep 2026 AoE for papers, 19 Sep 2026 for demos</td><td class="fmt">Non-archival, double-blind. 5 pages maximum excluding references and appendices.</td></tr>
+          <tr><th scope="row"><a href="https://genai4health.github.io/" target="_blank" rel="noopener">The Third Workshop on GenAI for Health (GenAI4Health)</a></th><td>Generative AI in healthcare, spanning clinical capability, safety, trust and human-AI interaction in care.</td><td class="dl">5 Sep 2026, 11:59pm AoE, one shared deadline across tracks</td><td class="fmt">Non-archival. Three tracks: research up to 9 pages, demonstration up to 5 pages, position up to 5 pages.</td></tr>
+          <tr><th scope="row"><a href="https://beyond-private-training.ai.studio/" target="_blank" rel="noopener">Beyond Private Training: The New Landscape of AI Privacy (InfPriv)</a></th><td>Privacy for autonomous agents, in-context learning and inference-only synthetic data.</td><td class="dl">7 Sep 2026 AoE, marked strict</td><td class="fmt">Short submissions up to 4 pages excluding references and appendices. Archival status not published as of 6 August 2026.</td></tr>
+          <tr><th scope="row"><a href="https://nemo.semantic.review/" target="_blank" rel="noopener">Neuro-Symbolic Embodied Intelligence (NEmo)</a></th><td>Embodied agents combining learned perception, reinforcement learning, LLMs, planning and symbolic knowledge.</td><td class="dl">10 Sep 2026 (no timezone stated)</td><td class="fmt">Non-archival. Long up to 8 pages, short up to 4 pages, excluding references and appendices.</td></tr>
+          <tr><th scope="row"><a href="https://roco-spring.github.io/" target="_blank" rel="noopener">RoCo-Spring: The Robust Correspondence Challenge</a></th><td>Making optical flow, stereo matching and scene flow robust to real world image corruptions.</td><td class="dl">15 Sep 2026 for the paper, 30 Sep 2026 for the final quantitative submission (tentative)</td><td class="fmt">Workshop papers 4 to 6 pages. Four challenge tracks. Archival status not published as of 6 August 2026.</td></tr>
+          <tr><th scope="row"><a href="https://agenticls.github.io" target="_blank" rel="noopener">Agentic AI for Biological Discovery (AgenticLS)</a></th><td>Agentic AI for life science discovery, from scientific copilots to closed loop autonomous laboratories.</td><td class="dl">16 Sep 2026, 11:59pm AoE</td><td class="fmt">Non-archival. Full up to 8 pages, extended abstracts up to 4 pages. Two tracks.</td></tr>
+          <tr class="np"><th scope="row"><a href="https://sites.google.com/view/globalsouthai-neurips26/home" target="_blank" rel="noopener">Global South AI (GlobalSouthAI)</a></th><td><em>not published as of 6 Aug 2026</em></td><td class="dl"><span class="pill pill-n">not published</span></td><td class="fmt"><em>not published</em></td></tr>
+          <tr class="np"><th scope="row"><a href="https://neurips.cc/Conferences/2026" target="_blank" rel="noopener">Self-Evolving Diversity-Driven Search for Robust AI Systems (EvoRobust)</a></th><td><em>not published as of 6 Aug 2026</em></td><td class="dl"><span class="pill pill-n">not published</span></td><td class="fmt"><em>not published</em></td></tr>
+          <tr class="np"><th scope="row"><a href="https://www.wiml.org/" target="_blank" rel="noopener">Women in Machine Learning (WiML) Workshop</a></th><td><em>not published as of 6 Aug 2026</em></td><td class="dl"><span class="pill pill-n">not published</span></td><td class="fmt"><em>not published</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="legend">
+      <span><i class="swatch" style="background:var(--urgent)"></i> Closes on or before 29 Aug 2026, 42 of 54</span>
+      <span><i class="swatch" style="background:var(--muted)"></i> No deadline published as of 6 Aug 2026, 3 of 54</span>
+      <span>Scroll the table sideways for format details</span>
+    </p>
+  </div>
+</section>
+
+<section id="satellites">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Satellites, travel required</span>
+      <h2>Atlanta and Paris workshops</h2>
+      <p class="prose" style="color:var(--muted); font-size:.95rem">These 50 workshops are
+        <b>not in Sydney</b>. They run on 12 and 13 December at the satellite venues, and attending
+        in person means an international flight. Listed for completeness so you do not build a
+        submission plan around one by mistake. These sites were not individually checked, so
+        follow the link for deadlines.</p>
+    </div>
+    <div class="sat-grid">
+      <div class="sat">
+        <h3>Atlanta, Georgia</h3>
+        <p class="sub">23 workshops, 9 to 13 December 2026</p>
+        <ul>
+          <li><a href="https://ai-native-academia.github.io" target="_blank" rel="noopener">AI-Native Academia: Authorship, Peer Review, and Conference Governance under AI</a> <code>AI-Native_Academia</code></li>
+          <li><a href="https://aim-neurips26.github.io/" target="_blank" rel="noopener">AI Agents for Biomedical Imaging and Multimodal Clinical Data</a> <code>AIM</code></li>
+          <li><a href="https://aiscik.github.io/" target="_blank" rel="noopener">AI and Science: Evolution or Extinction?</a> <code>AISciK</code></li>
+          <li><a href="https://childsafety-ai.github.io/" target="_blank" rel="noopener">Child Safety in AI</a> <code>Child_Safety_in_AI</code></li>
+          <li><a href="https://clea-neurips.github.io/" target="_blank" rel="noopener">Continual Learning for Enterprise AI Agents</a> <code>CLEA</code></li>
+          <li><a href="https://sites.google.com/view/devai-workshop-2026/" target="_blank" rel="noopener">DevAI: Developmental Perspectives on AI</a> <code>DevAI</code></li>
+          <li><a href="https://sites.google.com/view/dynafrontneurips26" target="_blank" rel="noopener">Dynamics at the Frontiers of Optimization, Sampling, and Games</a> <code>DynaFront</code></li>
+          <li><a href="https://econml26-workshop.github.io/" target="_blank" rel="noopener">Economics for Machine Learning</a> <code>EconML</code></li>
+          <li><a href="https://www.gembio.ai/" target="_blank" rel="noopener">Integrating Generative and Experimental Platforms for Biomolecular Design</a> <code>GEM_Bio</code></li>
+          <li><a href="http://Neurips2026haic.com" target="_blank" rel="noopener">Human-AI Coevolution</a> <code>HAIC</code></li>
+          <li><a href="https://eval-interactive-agents-workshop.github.io/" target="_blank" rel="noopener">Evaluation of Interactive Agents</a> <code>IAEval</code></li>
+          <li><a href="https://interpretability4discovery.github.io/" target="_blank" rel="noopener">Interpretability for Discovery</a> <code>Interp4Discovery</code></li>
+          <li><a href="https://judge2026.github.io" target="_blank" rel="noopener">First Workshop on Reliable Evaluation for Language Models</a> <code>JUDGe</code></li>
+          <li><a href="https://mathai-2026.github.io/" target="_blank" rel="noopener">The Sixth Workshop on Mathematical Reasoning and AI</a> <code>MATH-AI</code></li>
+          <li><a href="https://med-reasoner.github.io/neurips2026/" target="_blank" rel="noopener">Medical Reasoning with Vision Language Foundation Models</a> <code>Med-Reasoner</code></li>
+          <li><a href="https://mlxor-2026.github.io/" target="_blank" rel="noopener">Second Workshop on ML x OR: Machine Learning for Uncertainty-Aware Decision-Making</a> <code>MLxOR</code></li>
+          <li><a href="https://physworld-org.github.io/physworld.github.io/" target="_blank" rel="noopener">Physical World AI: Geometry, Characteristics, and Multimodal Sensing</a> <code>PhysWorldAI</code></li>
+          <li><a href="https://resource-aware-workshop.github.io/" target="_blank" rel="noopener">Resource-Aware Agentic AI</a> <code>RAAAI</code></li>
+          <li><a href="https://satquml.github.io/" target="_blank" rel="noopener">Secure and Trustworthy Quantum Machine Learning</a> <code>SaTQuML</code></li>
+          <li><a href="https://social-llm-workshop.github.io/" target="_blank" rel="noopener">Second Workshop on Large Language Models for Social Reasoning and Simulation</a> <code>SocialAgent</code></li>
+          <li><a href="https://ttcl-agents.github.io" target="_blank" rel="noopener">Towards Test-Time Continual Learning Agents</a> <code>TTCL</code></li>
+          <li><a href="https://vericodegen.github.io/" target="_blank" rel="noopener">AI for Verifiable Coding</a> <code>VERICODEGEN</code></li>
+          <li><a href="https://wmhs-neurips.github.io/WMHS/" target="_blank" rel="noopener">World Models for High-Stakes Health</a> <code>WMHS</code></li>
+        </ul>
+      </div>
+      <div class="sat">
+        <h3>Paris, France</h3>
+        <p class="sub">27 workshops, 9 to 13 December 2026</p>
+        <ul>
+          <li><a href="https://neurips-ai-for-chip-design-2026.github.io/" target="_blank" rel="noopener">AI for Chip Design</a> <code>AI4ChipDesign</code></li>
+          <li><a href="https://trustworthy-ai-for-good.github.io/" target="_blank" rel="noopener">Trustworthy AI for Good</a> <code>AI4GOOD</code></li>
+          <li><a href="https://ai4metascience.org/" target="_blank" rel="noopener">AI for Meta-Science: Scaling and Organizing Science in the Age of AI</a> <code>AI4MetaScience</code></li>
+          <li><a href="https://aintheself.github.io/" target="_blank" rel="noopener">AI and the Self: Human Identity, Authenticity, and Agency in the Age of AI</a> <code>AI_and_the_Self</code></li>
+          <li><a href="https://aidar-workshop.github.io/2026/" target="_blank" rel="noopener">AI Data Readiness for Scientific Discovery</a> <code>AIDaR</code></li>
+          <li><a href="https://axiom-neurips2026.github.io/" target="_blank" rel="noopener">AXIOM: Foundations of Efficient Deep Learning</a> <code>AXIOM</code></li>
+          <li><a href="https://e-values-workshop.github.io/" target="_blank" rel="noopener">E-values: From Statistics To ML</a> <code>E-values</code></li>
+          <li><a href="https://epistemic-intelligence-in-ml.github.io" target="_blank" rel="noopener">Epistemic Intelligence in Machine Learning</a> <code>EIML</code></li>
+          <li><a href="https://fast-workshop.github.io" target="_blank" rel="noopener">Foundations of Agentic Systems Theory</a> <code>FAST</code></li>
+          <li><a href="https://www.fllmpt-work.shop/" target="_blank" rel="noopener">Foundations of LLM Post-Training in Changing Environments</a> <code>FLLMPT</code></li>
+          <li><a href="https://flmsec.github.io/" target="_blank" rel="noopener">Foundations of Language Model Security</a> <code>FLMSec</code></li>
+          <li><a href="https://gddl-neurips-2026.github.io" target="_blank" rel="noopener">Bridging Optimal Transport, Learning and Structured Data</a> <code>GDDL</code></li>
+          <li><a href="https://almaai-disi-unibo.github.io/neurips2026-light-smallModels/" target="_blank" rel="noopener">LIGHT: Deployable Small Foundation Models</a> <code>LIGHT</code></li>
+          <li><a href="https://moleculediscovery.github.io/workshop2026/" target="_blank" rel="noopener">Agentic Systems for Molecular Sciences</a> <code>ML4Molecules</code></li>
+          <li><a href="https://imsb-uke.github.io/ml4spatialbio-2026/" target="_blank" rel="noopener">Machine Learning for Spatially Resolved High-dimensional Biology</a> <code>ML4SpatialBio</code></li>
+          <li><a href="https://neurips-workshop2026.github.io/foundation_model_agentic_privacy/" target="_blank" rel="noopener">Privacy in the Era of Large Opaque Models</a> <code>MPLR-FM</code></li>
+          <li><a href="https://artifactsasdata.org" target="_blank" rel="noopener">Neural Network Artifacts as a New Data Modality</a> <code>NeuralArtifacts</code></li>
+          <li><a href="https://newinml.github.io/NewInML2026NeurIPS/" target="_blank" rel="noopener">New In Machine Learning</a> <code>NewInML</code></li>
+          <li><a href="https://palm-neurips-2026.github.io/" target="_blank" rel="noopener">Personalized, Aligned, Long-Term Memory for AI Systems</a> <code>PALM</code></li>
+          <li><a href="https://sites.google.com/view/prigmneurips2026/home" target="_blank" rel="noopener">Principles of Generative Modeling</a> <code>PriGM</code></li>
+          <li><a href="https://sites.google.com/view/remucai" target="_blank" rel="noopener">Real-Time Multimodal Conversational AI</a> <code>ReMuCAI</code></li>
+          <li><a href="https://rl-experimental-sciences-workshop.github.io/" target="_blank" rel="noopener">Reinforcement Learning for Experimental Sciences</a> <code>RL4XS</code></li>
+          <li><a href="https://robotpad2026.github.io/" target="_blank" rel="noopener">RoboPAD: Post-Training Adaptation of Robot Foundation Models</a> <code>RoboPAD</code></li>
+          <li><a href="https://representations-physical-sciences.github.io/workshop-2026/" target="_blank" rel="noopener">Representations for the Physical Sciences</a> <code>RPS</code></li>
+          <li><a href="https://www.sim2science.com/" target="_blank" rel="noopener">Sim2Science: ML with Imperfect Scientific Models</a> <code>Sim2Sci</code></li>
+          <li><a href="https://slmw2026.github.io/" target="_blank" rel="noopener">SLM-Agents: SLMs for Agentic Systems</a> <code>SLM-Agents</code></li>
+          <li><a href="https://ts-limits.github.io/" target="_blank" rel="noopener">Generalization for Time Series in Tight Settings</a> <code>TS-LIMITS</code></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Key dates</span>
+      <h2>Timeline to December</h2>
+      <p class="prose" style="color:var(--muted); font-size:.95rem">Each entry is labelled
+        <span class="tag tag-ok">Confirmed</span> if it came from a live official 2026 page,
+        <span class="tag tag-exp">Expected</span> if it is carried over from the 2025 program and
+        not yet republished, or <span class="tag tag-unv">Unverified</span> if no source was
+        confirmed.</p>
+    </div>
+    <ul class="tl">
+      <li><span class="date">15 Aug 2026</span><div class="what">
+        <p><b>Check whether the volunteer and financial assistance page is live.</b>
+          <span class="tag tag-ok">Confirmed 404</span></p>
+        <p class="src">As of 22 July 2026 the 2026 page returned HTTP 404. This is the date to
+          re-check and replace every expected value below with the real one.</p></div></li>
+      <li><span class="date">22 Aug 2026</span><div class="what">
+        <p><b>Earliest workshop abstract deadlines pass.</b> <span class="tag tag-ok">Confirmed</span></p>
+        <p class="src">NeurReps and the AutoMLR abstract. Three affinity visa rounds already closed on 10 August.</p></div></li>
+      <li><span class="date">26 to 29 Aug 2026</span><div class="what">
+        <p><b>The bulk of Sydney workshop deadlines.</b> <span class="tag tag-ok">Confirmed</span></p>
+        <p class="src">42 of the 54 Sydney workshops close on or before 29 August 2026.</p></div></li>
+      <li><span class="date">1 Sep 2026</span><div class="what">
+        <p><b>Volunteer and financial assistance applications expected to open.</b>
+          <span class="tag tag-exp">Expected</span></p>
+        <p class="src">Both opened on 1 September in 2025. Submit on the opening day rather than later.</p></div></li>
+      <li><span class="date">24 Sep 2026</span><div class="what">
+        <p><b>Author notifications for the main track and position papers.</b>
+          <span class="tag tag-ok">Confirmed</span></p>
+        <p class="src">From the official 2026 dates page. This lands before the expected volunteer
+          deadline, so you will know your author status before choosing between the two programs.</p></div></li>
+      <li><span class="date">29 Sep 2026</span><div class="what">
+        <p><b>Workshop accept and reject notifications due to all contributors.</b>
+          <span class="tag tag-ok">Confirmed</span></p>
+        <p class="src">Organisers commit to notifying everyone by this date, per the Workshops
+          Guidance page.</p></div></li>
+      <li><span class="date">1 to 2 Oct 2026</span><div class="what">
+        <p><b>Volunteer and financial assistance deadlines expected.</b>
+          <span class="tag tag-exp">Expected</span></p>
+        <p class="src">In 2025 volunteering closed 1 October AoE and financial assistance closed
+          2 October AoE. Keep 30 September as an internal buffer.</p></div></li>
+      <li><span class="date">10 Oct 2026</span><div class="what">
+        <p><b>Volunteer decisions expected.</b> <span class="tag tag-exp">Expected</span></p>
+        <p class="src">If rejected, trigger the supervisor or school funds fallback the same week,
+          while early bird registration may still be open.</p></div></li>
+      <li><span class="date">Nov 2026</span><div class="what">
+        <p><b>Register once the outcome is settled.</b> <span class="tag tag-unv">Unverified</span></p>
+        <p class="src">2026 pricing was not published as of 22 July 2026. If volunteering, this is
+          the upfront payment that gets refunded, so keep the receipt.</p></div></li>
+      <li><span class="date">6 to 12 Dec 2026</span><div class="what">
+        <p><b>The conference, ICC Sydney.</b> <span class="tag tag-ok">Confirmed</span></p>
+        <p class="src">Expo 6 Dec, tutorials 7 Dec, main sessions 8 to 10 Dec, workshops 11 to 12 Dec.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="calendar">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">One click</span>
+      <h2>Calendar reminders</h2>
+    </div>
+    <div class="dl-card">
+      <p style="font-size:.95rem">Five all-day reminders covering the dates above that need an
+        action from you. The file imports into Outlook, Google Calendar or Apple Calendar. Every
+        event is marked as free time, so none of them will block your calendar.</p>
+      <ul class="dl-list">
+        <li><span class="d">15 Aug</span><span>Check whether the volunteer page is live</span></li>
+        <li><span class="d">1 Sep</span><span>Apply for the student volunteer program, expected opening day</span></li>
+        <li><span class="d">24 Sep</span><span>Author notifications, reassess assistance versus volunteering</span></li>
+        <li><span class="d">30 Sep</span><span>Volunteer deadline buffer</span></li>
+        <li><span class="d">10 Oct</span><span>Volunteer decisions expected, trigger fallbacks if rejected</span></li>
+      </ul>
+      <a class="dl-btn" download="reminders.ics"
+         href="reminders.ics">Download reminders.ics</a>
+      <p style="font-size:.85rem; color:var(--muted)">Two of the five reminders sit on expected
+        dates rather than confirmed ones. The 15 August reminder exists precisely to correct the
+        other four once the 2026 pages go live.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="sources">
+  <div class="wrap prose">
+    <span class="eyebrow">Provenance</span>
+    <p><b>Where the workshop list came from.</b> There was no official accepted workshops page on
+      neurips.cc when this was compiled. The listing URL returned HTTP 404 and the virtual
+      workshop listing returned zero events. This index is therefore built from the
+      <b>OpenReview venue registry</b>, checked <b>6 August 2026</b>, which returned 109 accepted
+      workshop venues each carrying an official title, acronym, website and assigned city.</p>
+    <p><b>What that means for you.</b> These are the accepted workshops that use OpenReview. Any
+      workshop running its own submission system could be missing, and the official listing is
+      still pending, so details may change. Deadlines were read from each Sydney workshop's own
+      site on 6 August 2026 and several were marked tentative by the organisers themselves.
+      Attendance and volunteer facts were checked on 22 July 2026 and are older.</p>
+    <p><b>Always confirm against the source of truth before you rely on a date:</b>
+      <a href="https://neurips.cc/Conferences/2026" target="_blank" rel="noopener">neurips.cc/Conferences/2026</a>.</p>
+    <p style="font-size:.85rem">Compiled by a fellow UNSW PhD student. Unofficial, unaffiliated
+      with NeurIPS, and offered without warranty. If you spot something stale, say so in the
+      channel and it will be corrected.</p>
+  </div>
+</footer>
+</body>
+</html>

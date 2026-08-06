@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NeurIPS 2026 Sydney PhD guide//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:neurips2026-volunteer-page-check-20260815@neurips-plan.local
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20260815
+SUMMARY:NeurIPS 2026: check whether the volunteer page is live
+DESCRIPTION:Check whether the 2026 volunteer and financial assistance pag
+ e is live and confirm the real 2026 dates. As of 2026-07-22 this URL ret
+ urned HTTP 404\, so every volunteer date in this guide is expected rathe
+ r than confirmed. Also check the pricing page for the student rate. http
+ s://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-volunteer-apply-20260901@neurips-plan.local
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20260901
+SUMMARY:Apply for the NeurIPS 2026 student volunteer program today (expec
+ ted opening date)
+DESCRIPTION:Expected opening day based on the 2025 program and not confir
+ med for 2026. In 2025 applications opened on 1 September and volunteers 
+ were refunded registration after two shifts of about four hours. https:/
+ /neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-author-notifications-20260924@neurips-plan.local
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20260924
+SUMMARY:NeurIPS 2026 author notifications: reassess financial assistance 
+ versus volunteering
+DESCRIPTION:Confirmed date taken from the official 2026 dates page. Autho
+ rs can weigh financial assistance against volunteering\, because both ma
+ y be applied for but only one can be won. Without an accepted paper\, vo
+ lunteering is usually the stronger route\, because financial assistance 
+ prioritises authors. https://neurips.cc/Conferences/2026/Dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-volunteer-deadline-buffer-20260930@neurips-plan.local
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20260930
+SUMMARY:NeurIPS 2026 volunteer deadline buffer
+DESCRIPTION:Buffer day. The 2025 volunteer deadline was 1 October AoE and
+  the 2026 deadline is expected rather than confirmed. Confirm the volunt
+ eer application has been submitted and acknowledged\, and confirm the re
+ al 2026 deadline. https://neurips.cc/Conferences/2026/FinancialAssistanc
+ e
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-decisions-expected-20261010@neurips-plan.local
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20261010
+SUMMARY:NeurIPS 2026 volunteer decisions expected: trigger fallbacks if r
+ ejected
+DESCRIPTION:Expected based on 2025\, when decisions were released by 10 O
+ ctober AoE. If accepted\, confirm shift dates and the registration refun
+ d process. If rejected\, ask a supervisor or school about conference fun
+ ds the same week and check affinity group registration schemes. https://
+ neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
