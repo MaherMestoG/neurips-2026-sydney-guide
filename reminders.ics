@@ -65,4 +65,30 @@ DESCRIPTION:Expected based on 2025\, when decisions were released by 10 O
  neurips.cc/Conferences/2026/FinancialAssistance
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-early-registration-deadline-20261030@neurips-plan.local
+DTSTAMP:20260828T120000Z
+DTSTART;VALUE=DATE:20261030
+SUMMARY:NeurIPS early registration deadline (AoE)
+DESCRIPTION:Early registration pricing for NeurIPS 2026 ends today\, 30 O
+ ctober 2026 Anywhere on Earth. Confirmed on 2026-08-28 from the official
+  dates page and from the pricing page countdown. Register on or before t
+ his date to pay the early rate. Amounts were still unpublished as of 202
+ 6-08-28. https://neurips.cc/Conferences/2026/Pricing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-cancellation-deadline-20261104@neurips-plan.local
+DTSTAMP:20260828T120000Z
+DTSTART;VALUE=DATE:20261104
+SUMMARY:NeurIPS last day for full-refund cancellation (AoE)
+DESCRIPTION:Last day to cancel a NeurIPS 2026 registration for a full ref
+ und\, 4 November 2026 Anywhere on Earth. Registrations cannot be cancell
+ ed or refunded after this date. Confirmed on 2026-08-28 from the pricing
+  page. Note that if the meeting is sold out\, a cancelled ticket returns
+  to a reserve pool and you likely will not be able to re-register\, so c
+ ancelling protects the money rather than the seat. https://neurips.cc/Co
+ nferences/2026/Pricing
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
