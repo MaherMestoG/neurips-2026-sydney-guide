@@ -17,14 +17,31 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:neurips2026-volunteer-apply-20260901@neurips-plan.local
-DTSTAMP:20260806T120000Z
+DTSTAMP:20260902T120000Z
 DTSTART;VALUE=DATE:20260901
-SUMMARY:Apply for the NeurIPS 2026 student volunteer program today (expec
- ted opening date)
-DESCRIPTION:Expected opening day based on the 2025 program and not confir
- med for 2026. In 2025 applications opened on 1 September and volunteers 
- were refunded registration after two shifts of about four hours. https:/
- /neurips.cc/Conferences/2026/FinancialAssistance
+SUMMARY:NeurIPS 2026 volunteer applications did not open on this expecte
+ d date
+DESCRIPTION:Did not happen. As of 2026-09-02 the NeurIPS 2026 volunteer a
+ nd financial assistance page still read "This page has not yet been upda
+ ted for 2026"\, so this 1 September date\, which was inferred from the 2
+ 025 programme rather than confirmed for 2026\, did not hold. Keep checki
+ ng the page. Note that general registration opens 3 September 2026. http
+ s://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-registration-opens-20260903@neurips-plan.local
+DTSTAMP:20260902T120000Z
+DTSTART;VALUE=DATE:20260903
+SUMMARY:NeurIPS registration opens 23:00 AEST\, first come first served
+DESCRIPTION:Registration for NeurIPS 2026 opens today at 23:00 AEST (13:0
+ 0 UTC) for the Sydney and Atlanta sites\, first come first served with a
+  waitlist once capacity is reached. The Paris opening date had not been 
+ announced as of 2026-09-02. Confirmed on 2026-09-02 from the official da
+ tes page. Registration amounts were still unpublished on that date\, so 
+ budget from the early deadline of 30 October AoE and the full-refund can
+ cellation date of 4 November AoE. https://neurips.cc/Conferences/2026/Pr
+ icing
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
