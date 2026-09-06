@@ -77,6 +77,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips2026-volunteer-deadline-buffer-20260930@neurips-plan.local
 DTSTAMP:20260906T120000Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261004
 SUMMARY:NeurIPS volunteer and financial assistance deadline buffer
 DESCRIPTION:Buffer day\, two days before the real deadline. The confirmed
@@ -120,6 +121,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips2026-decisions-expected-20261010@neurips-plan.local
 DTSTAMP:20260906T120000Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261020
 SUMMARY:NeurIPS volunteer decisions due by today (23:59 AoE)
 DESCRIPTION:Confirmed 2026 date: NeurIPS notifies volunteer applicants by
