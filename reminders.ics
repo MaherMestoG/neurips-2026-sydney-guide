@@ -17,16 +17,14 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:neurips2026-volunteer-apply-20260901@neurips-plan.local
-DTSTAMP:20260902T120000Z
+DTSTAMP:20260906T120000Z
 DTSTART;VALUE=DATE:20260901
-SUMMARY:NeurIPS 2026 volunteer applications did not open on this expecte
- d date
-DESCRIPTION:Did not happen. As of 2026-09-02 the NeurIPS 2026 volunteer a
- nd financial assistance page still read "This page has not yet been upda
- ted for 2026"\, so this 1 September date\, which was inferred from the 2
- 025 programme rather than confirmed for 2026\, did not hold. Keep checki
- ng the page. Note that general registration opens 3 September 2026. http
- s://neurips.cc/Conferences/2026/FinancialAssistance
+SUMMARY:NeurIPS 2026 volunteer applications did not open on this expected
+  date
+DESCRIPTION:Did not happen. This 1 September date was inferred from the 2
+ 025 programme and did not hold. The real opening date is 7 SEPTEMBER 202
+ 6\, published on the volunteer page and confirmed 2026-09-06. See the 7 
+ September event. https://neurips.cc/Conferences/2026/FinancialAssistance
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -45,6 +43,25 @@ DESCRIPTION:Registration for NeurIPS 2026 opens today at 23:00 AEST (13:0
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:neurips2026-applications-open-20260907@neurips-plan.local
+DTSTAMP:20260906T120000Z
+DTSTART;VALUE=DATE:20260907
+SUMMARY:NeurIPS volunteer and financial assistance applications OPEN toda
+ y
+DESCRIPTION:Both programs open today\, 7 September 2026\, confirmed from 
+ the official volunteer and financial assistance page on 2026-09-06. Volu
+ nteer applications are open for Sydney and Atlanta now. Paris opens in l
+ ate September. Apply at https://neurips.cc/Volunteers/volunteerapplicati
+ on . Volunteers work two shifts of about four hours each at the venue\, 
+ buy registration up front and are refunded after completing the shifts. 
+ The refund covers BOTH Conference Sessions & Tutorials AND Workshops & C
+ ompetitions\, so the workshop days are included. No hotel for volunteers
+ . You may apply for both the grant and the volunteer program but will no
+ t be selected for both. Submitting early costs nothing\, since you may e
+ dit until the deadline.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:neurips2026-author-notifications-20260924@neurips-plan.local
 DTSTAMP:20260806T120000Z
 DTSTART;VALUE=DATE:20260924
@@ -59,27 +76,60 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:neurips2026-volunteer-deadline-buffer-20260930@neurips-plan.local
-DTSTAMP:20260806T120000Z
-DTSTART;VALUE=DATE:20260930
-SUMMARY:NeurIPS 2026 volunteer deadline buffer
-DESCRIPTION:Buffer day. The 2025 volunteer deadline was 1 October AoE and
-  the 2026 deadline is expected rather than confirmed. Confirm the volunt
- eer application has been submitted and acknowledged\, and confirm the re
- al 2026 deadline. https://neurips.cc/Conferences/2026/FinancialAssistanc
- e
+DTSTAMP:20260906T120000Z
+DTSTART;VALUE=DATE:20261004
+SUMMARY:NeurIPS volunteer and financial assistance deadline buffer
+DESCRIPTION:Buffer day\, two days before the real deadline. The confirmed
+  2026 deadline for BOTH the volunteer and financial assistance programs 
+ is 6 October 2026 23:59 AoE\, published on the volunteer page and confir
+ med 2026-09-06. This event previously sat on 30 September\, a date infer
+ red from the 2025 programme before the real one was published. Confirm y
+ our application is submitted and saved. NeurIPS evaluates only the lates
+ t saved version and sends no confirmation email for financial assistance
+ . https://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-applications-deadline-20261006@neurips-plan.local
+DTSTAMP:20260906T120000Z
+DTSTART;VALUE=DATE:20261006
+SUMMARY:NeurIPS volunteer and financial assistance DEADLINE 23:59 AoE
+DESCRIPTION:Confirmed 2026 deadline for BOTH programs\, 6 October 2026 23
+ :59 Anywhere on Earth\, from the official volunteer and financial assist
+ ance page\, confirmed 2026-09-06. AoE means it passes when it is still 6
+  October anywhere on the planet\, so the practical Sydney cut-off is lat
+ e on 7 October. Do not rely on that margin. Financial assistance locatio
+ n selections are FINAL after this deadline. https://neurips.cc/Conferenc
+ es/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips2026-fa-decisions-20261014@neurips-plan.local
+DTSTAMP:20260906T120000Z
+DTSTART;VALUE=DATE:20261014
+SUMMARY:NeurIPS financial assistance decisions due by today (23:59 AoE)
+DESCRIPTION:Confirmed 2026 date: financial assistance applicants are noti
+ fied by 14 October 2026 23:59 AoE\, six days before volunteer decisions.
+  Confirmed 2026-09-06. Award and hotel offers may carry short acceptance
+  windows\, about 48 hours per the NeurIPS FAQ\, so watch your inbox and 
+ spam folder. If you win an award\, decline it promptly if you will not u
+ se it so it can be reallocated. https://neurips.cc/Conferences/2026/Fina
+ ncialAssistance
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:neurips2026-decisions-expected-20261010@neurips-plan.local
-DTSTAMP:20260806T120000Z
-DTSTART;VALUE=DATE:20261010
-SUMMARY:NeurIPS 2026 volunteer decisions expected: trigger fallbacks if r
- ejected
-DESCRIPTION:Expected based on 2025\, when decisions were released by 10 O
- ctober AoE. If accepted\, confirm shift dates and the registration refun
- d process. If rejected\, ask a supervisor or school about conference fun
- ds the same week and check affinity group registration schemes. https://
- neurips.cc/Conferences/2026/FinancialAssistance
+DTSTAMP:20260906T120000Z
+DTSTART;VALUE=DATE:20261020
+SUMMARY:NeurIPS volunteer decisions due by today (23:59 AoE)
+DESCRIPTION:Confirmed 2026 date: NeurIPS notifies volunteer applicants by
+  20 October 2026 23:59 AoE. This event previously sat on 10 October\, a 
+ date inferred from the 2025 programme before the real one was published.
+  Confirmed 2026-09-06. If accepted\, confirm shift dates and the refund 
+ process. If rejected\, ask a supervisor or school about conference funds
+  the same week and check affinity group schemes. This lands ten days bef
+ ore early pricing ends on 30 October\, so there is real time to act. htt
+ ps://neurips.cc/Conferences/2026/FinancialAssistance
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
